@@ -6,11 +6,11 @@
 //    Goods test;
 //    test.SetGoodsInfo(1, 10000);
 //    std::cout << test.GetIndex() << " - " << test.GetPrice << endl;
-class Goods{
- public:
-  void SetGoodsInfo(int index, int price);
-  int GetIndex();
-  int GetPrice();
+class Goods {
+ public:	
+  void SetGoodsInfo(const int index, const int price);
+  const int GetIndex();
+  const int GetPrice();
 
  private:
   int goods_index_ = 0;
