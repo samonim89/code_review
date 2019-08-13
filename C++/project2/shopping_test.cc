@@ -1,4 +1,4 @@
-#include "./shopping.h"
+#include "shopping.h"
 #include <gtest/gtest.h>
 
 // TEST (testCaseName, testName){
@@ -58,6 +58,7 @@ TEST(shopping_list_test, shopping_object_test) {
   EXPECT_EQ((shopping_object.GetLastElement()).GetPrice(), 4500);
   ASSERT_EQ((shopping_object.GetLastElement()).GetIndex(), 5);
 }
+
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
